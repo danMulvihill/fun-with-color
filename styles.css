@@ -16,12 +16,18 @@ body{
       color: yellow;
   }
   
+  #toggleButtons{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0 ; padding: 0;
+  }
+
   button{
+    width: 25%;
     font-size: 24px;
     color: blue;
-    margin: 15px;
-    
     cursor:pointer;
+    box-shadow: 10px 7px 8px #ccc;
   }
   h3{margin:0;padding:0}
   div{margin:0;padding:0}
