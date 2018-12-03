@@ -1,7 +1,13 @@
+body{
+  font-family: Baskerville, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
 .title{
     text-align:center;
     color: magenta;
     background: black;
+    opacity: 0.8;
+    padding: 15px 0;
   }
   .fun{
       color: cyan;
