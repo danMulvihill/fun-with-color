@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fun with Color</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">
+        <span class="fun">Fun</span> 
+        <span class="with">with</span>
+        Color
+    </h1>
+<button onclick="toggleRGB()">RGB</button>
+<button onclick="toggleHSL()">HSL</button>
+
+<h3>select to blend:</h3>
+<div id="rgb">
+    <div id="Red">
+    Red: <span id="redOut">0</span><br>
+    <input type="range" id="red" value="0" min="0" max="255">
+    </div> 
+
+    <div id="Green">
+    Green: <span id="greenOut">0</span><br>
+      <input type="range" id="green" value="0" min="0" max="255">
+  </div> 
+    <div id="Blue">
+    Blue: <span id="blueOut">0</span><br>
+      <input type="range" id="blue" value="0" min="0" max="255">
+  </div> 
+</div>
+<div id="hsl">
+  <div id="Hue">
+    Hue: <span id="hueOut">0</span><br>
+      <input type="range" id="hue" value="0" min="0" max="360">
+  </div> 
+
+    <div id="Sat">
+    Saturation: <span id="satOut">50</span><br>
+      <input type="range" id="sat" value="50" min="0" max="100">
+  </div> 
+    <div id="Lit">
+    Lightness: <span id="litOut">50</span><br>
+      <input type="range" id="lit" value="50" min="0" max="100">
+  </div> 
+</div>
+  <div id="output"></div>
+  
+<script src="scripts.js"></script>
+</body>
+</html>

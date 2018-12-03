@@ -1,0 +1,48 @@
+.title{
+    text-align:center;
+    color: magenta;
+    background: black;
+  }
+  .fun{
+      color: cyan;
+  }
+  .with{
+      color: yellow;
+  }
+  
+  button{
+    font-size: 24px;
+    color: blue;
+    margin: 15px;
+    
+    cursor:pointer;
+  }
+  h3{margin:0;padding:0}
+  div{margin:0;padding:0}
+  #output {
+    border: 1px solid black;
+    background: black;
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  #rgb, #hsl{
+    display:flex;
+    justify-content: space-between;
+  }
+  #hsl{
+    display: none;
+  }
+  
+  #Red,#Green,#Blue, #Hue, #Sat, #Lit{
+  
+    color:white;
+    background:black;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
