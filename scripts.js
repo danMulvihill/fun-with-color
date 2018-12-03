@@ -43,7 +43,7 @@ var dialH=document.getElementById("hue");
 var hueOut = document.getElementById("hueOut");
 dialH.addEventListener("change", function(){
   hueOut.textContent=dialH.value;
-  document.getElementById("Hue").style.backgroundColor="hsl("+dialH.value+",50%,50%)";
+  document.getElementById("Hue").style.backgroundColor="hsl("+dialH.value+",100%,50%)";
   triggerHSL()
 });
 
@@ -59,7 +59,7 @@ var dialL=document.getElementById("lit");
 var litOut = document.getElementById("litOut");
 dialL.addEventListener("change", function(){
   litOut.textContent=dialL.value;
-  document.getElementById("Lit").style.backgroundColor="hsl("+dialH.value+",50%,"+dialL.value+"%)";
+  document.getElementById("Lit").style.backgroundColor="hsl("+dialH.value+",100%,"+dialL.value+"%)";
   triggerHSL()
 });
 
