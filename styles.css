@@ -1,16 +1,45 @@
 body{
   font-family: Segoe UI,Roboto,Oxygen,Ubuntu,Droid Sans,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 10px;
 }
 
 .title{
-    text-align:center;
     color: magenta;
     background: black;
     opacity: 0.8;
     padding: 15px 0;
+    margin: 0;
+
   }
+
+.top-nav{
+  background: black;
+  margin-bottom: 10px;
+}
+.top-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: flex-end;
+  list-style-type: none;
+  
+}
+.top-nav ul li{
+  margin: 10px;
+  
+  
+}
+.top-nav ul li a{
+  color: cyan;
+  text-decoration: none;
+}
   .fun{
       color: cyan;
+      padding: 10px;
   }
   .with{
       color: yellow;
@@ -22,16 +51,17 @@ body{
     margin: 0 ; padding: 0;
   }
 
-  button{
+  #toggleButtons button{
     width: 25%;
     font-size: 24px;
     color: blue;
     cursor:pointer;
     box-shadow: 10px 7px 8px #ccc;
   }
-  h3{margin:0;padding:0}
-  div{margin:0;padding:0}
-  #output {
+
+  .blender h3{margin:0;padding:0}
+  .blender div{margin:0;padding:0}
+  .blender #output {
     border: 1px solid black;
     background: black;
     width: 90%;
@@ -58,3 +88,266 @@ body{
     border-radius: 5px;
   }
   
+
+  /* Clock */
+
+  #clock{
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px #333;
+    background: #ccc;
+    font-size: 5em;
+}
+
+
+.clock-body{
+  background-color: #333;
+  font-size: 20px;
+    color:white;
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between
+}
+
+.switch{
+   font-weight: bold; 
+}
+#switchRed{
+    color: red;
+}
+#switch{
+    color: green;
+}
+#switchBlue{
+    color: blue;
+}
+
+.rgb{
+    padding: 3px 0 0 5px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.red{
+    background-color: red;  
+    color: cyan;
+}
+.green{
+    background-color: green;
+    color: rgb(238, 156, 238);
+}
+.blue{
+    background-color:blue;
+    color: yellow;
+}
+
+#hrs{
+    color: red;
+}
+#mins{
+    color: green;
+}
+#secs{
+    color: blue;
+}
+
+#greet{
+    color: white;
+    font-size: 2em;
+    font-weight: white;
+    position:absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+@media (max-width:700px){
+    #clock{
+        width: 70%;
+        font-size: 2.8em;
+    }
+}
+@media (max-width: 500px){
+    .clock-body{
+        display: block;
+    }
+
+    .clock-body>span {
+        display: block;
+    }
+
+
+}
+
+/* rainbow */
+.rainbow h2{
+  text-align: center;
+}
+.rainbow button{
+  display: block;
+  margin: 10px auto;
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 60%;
+  background: pink;
+  border-radius: 5px;
+  border:none;
+  cursor: pointer;
+}
+
+.rainbow form{
+  width: 100%;
+  /* display: flex;
+  justify-content: space-around; */
+}
+.rainbow form div{
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.ban {
+  /* border: 1px solid; */
+  height: 0.2%;
+  width: 100%;
+}
+
+
+
+/* twilight */
+
+.moon
+{
+  position: absolute;
+  margin: auto;
+  top: 104px;
+  right: 0;
+  bottom: 260px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0 0 white; 
+}
+/* body{
+  background: black;
+} */
+.stars {
+background-color: white;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+animation-iteration-count: infinite;
+}
+
+.star-1 {
+margin-top: 5%; 
+margin-left: 60%;
+animation-name: twinkle-1;
+animation-duration: 5s;
+}
+
+.star-2 {
+margin-top: 6%;
+margin-left: 25%;
+animation-name: twinkle-2;
+animation-duration: 6s;
+}
+
+.star-3 {
+margin-top: 3%;
+margin-left: 34%;
+height: 3px;
+width: 3px;
+animation-name: twinkle-2;
+animation-duration: 3s;
+}
+
+@keyframes twinkle-1 {
+20% {
+  transform: scale(0.5);
+  opacity: 0.5;
+}
+}
+
+@keyframes twinkle-2 {
+50% {
+  transform: scale(0.5);
+  opacity: 0.5;
+}
+}
+
+#back {
+position: fixed;
+padding: 0;
+margin: 0;
+top: 104px;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(black, #000099, #ffcccc);
+}
+
+/* medals */
+
+
+.stripes{ 
+  border-radius: 20px;
+  width: 70%;
+  height: 400px;
+  margin:  50 auto;
+  background: repeating-linear-gradient(
+    45deg,
+    white 0px,
+    black 40px,
+    yellow 40px,
+    black 80px,
+    brown 80px,
+    black 120px
+  );
+}
+
+.medal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 50 auto;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 10px 7px 8px #ccc;
+    
+}
+.medal:hover {
+  transform: scale(1.7);
+}
+
+@media (min-width: 800px){
+    #medals{
+        display:flex;
+        justify-content: space-between;
+    }
+    .medal{
+        transform: scale(1.5)
+      }
+}
+
+.gold{
+  background: linear-gradient(115deg, yellow, black)
+}
+.silver{
+  background: linear-gradient(115deg, white, black)
+}
+.bronze{
+  background: linear-gradient(115deg, brown, black)
+}

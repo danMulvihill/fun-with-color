@@ -1,17 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fun with Color</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1 class="title">
-        <span class="fun">Fun</span> 
-        <span class="with">with</span>
-        Color
-    </h1>
+<?php include("../header.php") ?>
+<div class="blender">
 <div id="toggleButtons">
   <button onclick="toggleRGB()">RGB</button>
   <button onclick="toggleHSL()">HSL</button>
@@ -49,7 +37,10 @@
   </div> 
 </div>
   <div id="output"></div>
-  
+</div> <!-- end blender -->
 <script src="scripts.js"></script>
+
+
+</div>
 </body>
 </html>
