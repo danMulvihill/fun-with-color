@@ -8,12 +8,7 @@
 </head>
 <body>
    <header>
-    <h1 class="title">
-        <span class="fun">Fun</span> 
-        <span class="with">with</span>
-        Color
-    </h1>
-    <nav class="top-nav">
+   <nav class="top-nav">
       <ul>
         <li><a href="../blender">Blender</a></li>
         <li><a href="../clock">Clock</a></li>
@@ -23,5 +18,14 @@
         <!-- <li><a href="../cookie-emporium-master">Cookies</a></li> -->
       </ul>
     </nav>
+    <div class="logo">
+        <li class="title"><h2>
+            <span class="fun">Fun</span> 
+            <span class="with">with</span>
+            Color</h2>
+        </li>
+        <a href="https://danmulvihill.github.io/">about me</a>
+    </div>
+
    </header>
    <div class="container">

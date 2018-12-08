@@ -38,9 +38,10 @@
 </div>
   <div id="output"></div>
 </div> <!-- end blender -->
-<script src="scripts.js"></script>
+
 
 
 </div>
+<script src="scripts.js"></script>
 </body>
 </html>
