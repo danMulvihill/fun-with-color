@@ -305,11 +305,51 @@ animation-duration: 3s;
 }
 }
 
+.airplane {
+  background-color:#ccc;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
+  height: 5px;
+  width: 2px;
+  margin-top: 4%;
+  border-radius: 50%;
+  animation-name: move-across-sky;
+  animation-duration: 50s;
+  
+}
+@keyframes move-across-sky{
+  100% {
+    left:100%;  
+  }
+  }
+  .light{
+    background-color: white;
+    width:2px;
+    height: 2px;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blink{
+    10% { 
+      opacity: 0
+    }
+    20%{
+      opacity: 1
+    }
+    30%{
+      opacity: 0
+    }
+    }
+
+
 #back {
 position: fixed;
 padding: 0;
 margin: 0;
-top: 84px;
+top: 73px;
 left: 0;
 width: 100%;
 height: 100%;
