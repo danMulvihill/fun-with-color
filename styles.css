@@ -412,3 +412,76 @@ background: linear-gradient(black, #000099, #ffcccc);
 .bronze{
   background: linear-gradient(115deg, brown, black)
 }
+
+/* box */
+.box{
+  margin-top: 35px;
+
+}
+.side {
+  position:absolute;
+  top:45%;
+  left:25%;
+  border: 1px solid black;
+  width: 80%;
+  max-width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.top,.right,.front{ 
+  opacity:0.8;
+}
+.top{background:cyan}
+.right{background:magenta}
+.front{background:linear-gradient(#000,#00f)}
+
+.bottom,.left,.back{
+  opacity:0.8;
+}
+.bottom{background:red}
+.left{background:orange}
+.back{background:linear-gradient(#0f0,#ff0)}
+
+.front{
+  transform:rotate(-90deg);
+  transition: left 8s;
+}
+.front:hover{
+  left:8%;
+  transition: left 2s;
+}
+
+.back{
+  transform: translate(100px, -100px)
+}
+
+.top{
+  height:100px;
+  transform: skewX(-45deg) translate(-50px, -100px);
+  transition: transform 9s;
+}
+.top:hover{
+  transform: skewX(-45deg) translate(-50px, -200px);
+  transition: transform 3s;
+}
+.bottom{
+  height:100px;
+  transform: skewX(-45deg) translate(150px, 100px) ;
+}
+.right{
+  width:100px;
+  transform: translate(200px, -50px) skewY(-45deg);
+  transition: transform 7s;
+}
+
+.right:hover{
+  transform: translate(300px, -150px) skewY(-45deg);
+  transition: transform 3s;
+}
+
+.left{
+  width:100px;
+  transform: translateY(-50px) skewY(-45deg);
+}
+
